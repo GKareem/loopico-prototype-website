@@ -46,12 +46,12 @@ export default function Login() {
                 <button class="btn" onClick={() => handleSubmit()}>Log In</button>
               </form>
               <div class="link-div text-center">
-                <a class="link-primary" onClick={() => { window.location.href = "loopico-prototype-website/#/forgot-password" }}>Forgot Password?</a>
+                <a class="link-primary" onClick={() => { window.location.href = "/#/forgot-password" }}>Forgot Password?</a>
               </div>
             </div>
           </div>
           <div class="link-div text-center">
-            Need an account? <a class="link-primary" onClick={() => { window.location.href = "loopico-prototype-website/#/signup" }}>Sign Up</a>
+            Need an account? <a class="link-primary" onClick={() => { window.location.href = "/#/signup" }}>Sign Up</a>
           </div>
         </div>
       </div>

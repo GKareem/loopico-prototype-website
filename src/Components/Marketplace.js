@@ -60,7 +60,7 @@ export default function Marketplace() {
 
     function gotoCurrentPost(index) {
         sessionStorage.setItem("currentPost", index);
-        window.location.href = "loopico-prototype-website/#/marketplace/post";
+        window.location.href = "/#/marketplace/post";
         forceUpdate();
     }
 
