@@ -55,7 +55,7 @@ export default function App() {
     
     return (
         <div className="App">
-            <HashRouter basename="/loopico-prototype-website">
+            <HashRouter basename="/">
                 <Switch>
                     <Route exact path="/login">
                         {loggedIn ? <Redirect to="/dashboard" /> : <Login />}
