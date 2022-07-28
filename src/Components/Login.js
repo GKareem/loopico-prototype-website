@@ -11,7 +11,7 @@ export default function Login() {
 
   async function handleSubmit(e) {
 
-    window.location.href = "loopico-prototype-website/#/login";
+    window.location.href = "/#/login";
 
     sessionStorage.setItem("Email:", JSON.stringify(emailRef.current.value));
     sessionStorage.setItem("Password:", JSON.stringify(passwordRef.current.value));
