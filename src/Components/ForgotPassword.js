@@ -36,12 +36,12 @@ export default function ForgotPassword() {
                 <button class="btn" onClick={() => handleSubmit()}>Reset Password</button>
               </form>
               <div class="link-div text-center">
-                <a class="link-primary" onClick={() => { window.location.href = "/#/login" }}>Login</a>
+                <a class="link-primary" onClick={() => { window.location.href = "loopico-prototype-website/#/login" }}>Login</a>
               </div>
             </div>
           </div>
           <div class="link-div text-center">
-             Need an account? <a class="link-primary" onClick={() => { window.location.href = "/#/signup" }}>Sign Up</a>
+             Need an account? <a class="link-primary" onClick={() => { window.location.href = "loopico-prototype-website/#/signup" }}>Sign Up</a>
           </div>
         </div>
       </div>

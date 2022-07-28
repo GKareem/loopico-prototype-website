@@ -54,7 +54,7 @@ export default function Signup() {
             </div>
           </div>
           <div class="link-div text-center">
-            Already have an account? <a class="link-primary" onClick={() => { window.location.href = "/#/login" }}>Login</a>
+            Already have an account? <a class="link-primary" onClick={() => { window.location.href = "loopico-prototype-website/#/login" }}>Login</a>
           </div>
           <div class="modal fade" id="popupModal">
             <div class="modal-dialog">

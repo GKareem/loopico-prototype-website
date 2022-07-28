@@ -30,15 +30,15 @@ export default function App() {
         setPassword(tempPassword);
 
         if (JSON.parse(tempEmail) === "loopico@loopico.com" && JSON.parse(tempPassword) === "password") {
-            window.location.href = "/#/marketplace";
+            window.location.href = "loopico-prototype-website/#/marketplace";
             setLoggedIn(true);
         } else {
             if (window.location.hash === "#/login") {
-                window.location.href = "/#/login";
+                window.location.href = "loopico-prototype-website/#/login";
             } else if (window.location.hash === "#/signup") {
-                window.location.href = "/#/signup";
+                window.location.href = "loopico-prototype-website/#/signup";
             } else if (window.location.hash === "#/forgot-password") {
-                window.location.href = "/#/forgot-password";
+                window.location.href = "loopico-prototype-website/#/forgot-password";
             }
             
             setLoggedIn(false);
@@ -50,12 +50,12 @@ export default function App() {
         sessionStorage.setItem("Password:", JSON.stringify(""));
 
         setLoggedIn(false);
-        window.location.href = "/#/login";
+        window.location.href = "/loopico-prototype-website/#/login";
     }
     
     return (
         <div className="App">
-            <HashRouter basename="loopico-prototype-website/">
+            <HashRouter basename="/loopico-prototype-website">
                 <Switch>
                     <Route exact path="/login">
                         {loggedIn ? <Redirect to="/dashboard" /> : <Login />}
