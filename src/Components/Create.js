@@ -21,7 +21,7 @@ export default function Create() {
     function postListing() {
         let postNum = localStorage.length;
         localStorage.setItem(postNum, JSON.stringify(post));
-        window.location.href = "/#/marketplace";
+        window.location.href = "/loopico-prototype-website/#/marketplace";
         forceUpdate();
     }
 

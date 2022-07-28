@@ -18,8 +18,8 @@ export default function Header() {
                 <div class="navbar-collapse justify-content-end collapse" id="mainNav">
                     <ul class="navbar-nav align-items-center flex-row">
                         <li class="nav-item ">
-                            <button type="button" class="btn btn-lg" id="boldText" onClick={() => { window.location.href = "/#/create" }}>Add Your Material</button>
-                            <button type="button" class="btn btn" id="boldText" onClick={() => { window.location.href = "/#/log-out" }}>Log out</button>
+                            <button type="button" class="btn btn-lg" id="boldText" onClick={() => { window.location.href = "/loopico-prototype-website/#/create" }}>Add Your Material</button>
+                            <button type="button" class="btn btn" id="boldText" onClick={() => { window.location.href = "/loopico-prototype-website/#/log-out" }}>Log out</button>
                         </li>
                         <li class="nav-item">
                             <img class="img-fluid profile-pic" src={profile_pic} width="50" height="50" />
