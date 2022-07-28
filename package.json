@@ -1,6 +1,6 @@
 {
-    "homepage": "https://GKareem.github.io/loopico-prototype-website",
-    "name": "loopico-prototype-website",
+    "homepage": "https://gkareem.github.io/loopico-prototype-website",
+    "name": "loopico",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
