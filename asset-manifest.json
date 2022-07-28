@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/loopico-prototype-website/static/css/main.2ff3518b.css",
-    "main.js": "/loopico-prototype-website/static/js/main.e6050b08.js",
+    "main.js": "/loopico-prototype-website/static/js/main.e26c3fcf.js",
     "static/media/bootstrap-icons.woff?": "/loopico-prototype-website/static/media/bootstrap-icons.7ff3ca6fa798de3f8ac2.woff",
     "static/media/bootstrap-icons.woff2?": "/loopico-prototype-website/static/media/bootstrap-icons.f2539a501be3a673de05.woff2",
     "static/media/profilepic.png": "/loopico-prototype-website/static/media/profilepic.9569c8a84df3b7b75204.png",
@@ -9,10 +9,10 @@
     "static/media/material_marketplace.png": "/loopico-prototype-website/static/media/material_marketplace.23817455d7870ecd645d.png",
     "index.html": "/loopico-prototype-website/index.html",
     "main.2ff3518b.css.map": "/loopico-prototype-website/static/css/main.2ff3518b.css.map",
-    "main.e6050b08.js.map": "/loopico-prototype-website/static/js/main.e6050b08.js.map"
+    "main.e26c3fcf.js.map": "/loopico-prototype-website/static/js/main.e26c3fcf.js.map"
   },
   "entrypoints": [
     "static/css/main.2ff3518b.css",
-    "static/js/main.e6050b08.js"
+    "static/js/main.e26c3fcf.js"
   ]
 }
