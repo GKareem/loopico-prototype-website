@@ -1,0 +1,43 @@
+import React from "react";
+
+export const PostData = [
+    {
+        title: "2X8X12 Premium Knotty Cedar",
+        price: "$300",
+        category: "Wood and Carpentry",
+        description: "Contact for more detail",
+        address: "96 Sweeterwater Bay, Winnipeg, MB",
+        postalcode: "R2J 3G5",
+        email: "testemail@gmail.com",
+        phone: "111-222-3333",
+        youtubelink: "youtube.com",
+        scanlink: "google.com",
+        imgs: [{ data_url: "Images/posts/img_1.png" }],
+    },
+    {
+        title: "Wood and Metal Doors",
+        price: "Contact for More Information",
+        category: "Doors",
+        description: "Contact for more detail",
+        address: "372 Enfield Crescent, Winnipeg, MB ",
+        postalcode: "R2H 1C7",
+        email: "testemail@gmail.com",
+        phone: "111-222-3333",
+        youtubelink: "youtube.com",
+        scanlink: "google.com",
+        imgs: [{ data_url: "Images/posts/img_2.png" }],
+    },
+    {
+        title: "Brick 35X35",
+        price: "Free",
+        category: "Bricks and Stones",
+        description: "Contact for more detail",
+        address: "421 Higgins Ave, Winnipeg, MB ",
+        postalcode: "R3E 1V4",
+        email: "testemail@gmail.com",
+        phone: "111-222-3333",
+        youtubelink: "youtube.com",
+        scanlink: "google.com",
+        imgs: [{ data_url: "Images/posts/img_3.png" }],
+    },
+]

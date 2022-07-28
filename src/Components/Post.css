@@ -1,0 +1,84 @@
+#post {
+    width: 60vw;
+    height: fit-content;
+    justify-content: center;
+    margin-top: 25vh;
+}
+
+#post .row>.col>.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 1rem;
+}
+
+#post .card-title {
+    font-family: "Roboto";
+    font-weight: 700;
+}
+
+#post .card-text {
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+#post #postPrice {
+    font-family: "Roboto";
+    font-weight: 700;
+    color: rgb(211, 114, 43);
+}
+
+#post #imgSlide {
+    max-width: fit-content;
+    border-radius: 1rem;
+    border-width: 0.15rem;
+    border-color: rgb(74, 163, 152);
+}
+
+#post #imgSlide .carousel-inner {
+    padding: 3rem 6rem 3rem 6rem;
+}
+
+#post #rightSide {
+    width: 20vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#post #rightSide .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#post #rightSide .col{
+    text-align: center;
+}
+
+#post #rightSide .bi {
+    color: rgb(211, 114, 43);
+    margin-right: 0.4rem;
+}
+
+#post #rightSide .form-control {
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    border-width: 0.15rem;
+    border-color: rgb(74, 163, 152);
+}
+
+#post .btn {
+    font-family: "Roboto";
+    font-weight: 700;
+    color: rgb(240, 240, 240);
+    background-color: rgb(74, 163, 152);
+}
+
+#post .btn:hover {
+    opacity: 80%;
+}
+
+#post .modal-body .modal-header {
+    font-family: "Roboto";
+    font-weight: 400;
+}

@@ -1,0 +1,99 @@
+#signup {
+    display: flex;
+    height: fit-content;
+    width: 100vw;
+    justify-content: center;
+    align-self: flex-start;
+}
+
+#signup .row>.column>.column {
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
+    margin-bottom: 20%;
+}
+
+#signup .card {
+    height: fit-content;
+    min-width: 35vw;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+#signup .card-title {
+    font-family: "Roboto";
+    font-weight: 700;
+}
+
+#signup .btn {
+    margin-top: 5%;
+    width: 100%;
+    font-family: "Roboto";
+    font-weight: 700;
+    color: rgb(240, 240, 240);
+    background-color: rgb(74, 163, 152);
+}
+
+#signup .btn:hover {
+    opacity: 80%;
+}
+
+#signup .link-div {
+    margin-top: 3%;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+
+/* #text {
+  color: black;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+}
+
+#boldText {
+  color: black;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+}
+
+#largeLogoDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 30%;
+  margin-bottom: 20%;
+}
+
+#signup {
+  display: flex;
+  height: fit-content;
+  width: 100vw;
+  justify-content: center;
+  align-self: flex-start;
+}
+
+#signupCard {
+  height: fit-content;
+  min-width: 30vw;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+#groups {
+  margin-top: 3%;
+}
+
+#signupButton {
+  margin-top: 5%;
+  width: 100%;
+  color: white;
+  background-color: rgb(66, 107, 94);
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+}
+
+#linkDiv {
+  text-align: center;
+  margin-top: 3%;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+} */

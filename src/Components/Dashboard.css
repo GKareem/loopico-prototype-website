@@ -1,0 +1,19 @@
+#dashboard {
+    display: flex;
+}
+
+#dashboard .btn{
+    font-family: "Roboto";
+    font-weight: 700;
+    color: rgb(240, 240, 240);
+    background-color: rgb(74, 163, 152);
+}
+
+#dashboard .row {
+    min-width: 65vw;
+    margin-top: 18vh;
+}
+
+#dashboard .btn:hover {
+    opacity: 80%;
+}

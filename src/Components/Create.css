@@ -1,0 +1,50 @@
+#createPost {
+    display: flex;
+    justify-content: center;
+}
+
+#createPost .card {
+    width: 70vw;
+    margin: 4rem 0 4rem 0;
+    border-radius: 1rem;
+}
+
+#createPost .form-control {
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+    border-color: rgb(74, 163, 152);
+}
+
+#createPost .form-label {
+    font-family: "Roboto";
+    font-weight: 700;
+    color: rgb(211, 114, 43);
+}
+
+#createPost .form-check-label {
+    font-family: "Roboto";
+    font-weight: 700;
+    color: rgb(211, 114, 43);
+}
+
+#createPost .form-check-input {
+    border-width: 0.12rem;
+    border-color: rgb(74, 163, 152);
+}
+
+#createPost .btn {
+    font-family: "Roboto";
+    font-weight: 700;
+    color: rgb(240, 240, 240);
+    background-color: rgb(74, 163, 152);
+}
+
+#createPost .btn:hover {
+    opacity: 80%;
+}
+
+#createPost .images-wrapper {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}

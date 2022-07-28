@@ -1,0 +1,57 @@
+#marketplace {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 12vh;
+    align-items: center;
+}
+
+#marketplace .searchBarWapper {
+    position: relative;
+}
+
+#marketplace .searchBarWapper i {
+    position: absolute;
+    top: 0.1rem;
+    left: 2.2rem;
+    color: rgb(74, 163, 152);
+}
+
+#marketplace #posts {
+    min-width: 32vw;
+    height: 75vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#marketplace .form-control {
+    max-width: 15vw;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+#marketplace .card {
+    border-radius: 0.8rem;
+    border-width: 0.15rem;
+    border-color: rgb(74, 163, 152);
+}
+
+#marketplace .card:hover {
+    opacity: 70%;
+}
+
+#marketplace .card-title {
+    font-family: "Roboto";
+    font-weight: 700;
+}
+
+#marketplace .card-text {
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+#marketplace #postPrice {
+    font-family: "Roboto";
+    font-weight: 700;
+    color: rgb(211, 114, 43);
+}

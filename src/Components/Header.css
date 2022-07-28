@@ -1,0 +1,44 @@
+.navbar{
+    display: flex;
+    background-color: rgb(228, 228, 228);
+}
+
+.navbar-brand{
+    margin-left: 1rem;
+}
+
+.nav-item>.btn{
+    font-family: "Roboto";
+    font-weight: 700;
+    margin-right: 2rem;
+    color: rgb(240, 240, 240);
+    background-color: rgb(74, 163, 152);
+}
+
+.nav-item>.btn:hover {
+    opacity: 80%;
+    color: rgb(240, 240, 240);
+    background-color: rgb(74, 163, 152);
+}
+
+.nav-item>.profile-pic {
+    margin-right: 1rem;
+}
+
+.nav-item>.profile-pic-text{
+    font-family: "Roboto";
+    font-weight: 700;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+    color: rgb(211, 114, 43);
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-nav {
+        justify-content: end;
+    }
+
+    .nav-item>.btn {
+        margin-left: 1rem;
+    }
+}
