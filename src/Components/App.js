@@ -30,15 +30,15 @@ export default function App() {
         setPassword(tempPassword);
 
         if (JSON.parse(tempEmail) === "loopico@loopico.com" && JSON.parse(tempPassword) === "password") {
-            window.location.href = "loopico-prototype-website/#/marketplace";
+            window.location.href = "/#/marketplace";
             setLoggedIn(true);
         } else {
             if (window.location.hash === "#/login") {
-                window.location.href = "loopico-prototype-website/#/login";
+                window.location.href = "/#/login";
             } else if (window.location.hash === "#/signup") {
-                window.location.href = "loopico-prototype-website/#/signup";
+                window.location.href = "/#/signup";
             } else if (window.location.hash === "#/forgot-password") {
-                window.location.href = "loopico-prototype-website/#/forgot-password";
+                window.location.href = "/#/forgot-password";
             }
             
             setLoggedIn(false);
@@ -50,7 +50,7 @@ export default function App() {
         sessionStorage.setItem("Password:", JSON.stringify(""));
 
         setLoggedIn(false);
-        window.location.href = "/loopico-prototype-website/#/login";
+        window.location.href = "/#/login";
     }
     
     return (
