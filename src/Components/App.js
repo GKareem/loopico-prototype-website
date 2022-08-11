@@ -50,7 +50,7 @@ export default function App() {
         sessionStorage.setItem("Password:", JSON.stringify(""));
 
         setLoggedIn(false);
-        window.location.href = "/loopico-prototype-website/#/login";
+        window.location.href = "/#/login";
     }
     
     return (

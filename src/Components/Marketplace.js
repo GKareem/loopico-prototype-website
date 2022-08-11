@@ -48,11 +48,19 @@ export default function Marketplace() {
                 forceUpdate();
             }
         } else {
-            for (let j = 0; j <= localStorage.length; j++) {
+            let count = 0;
+
+            for (let j = 0; j >= 0; j++) {
                 const postInfo = localStorage.getItem(j);
+
                 if (postInfo) {
                     posts.push(JSON.parse(postInfo));
+                    count++;
                     forceUpdate();
+                }
+
+                if (count === localStorage.length) {
+                    break;
                 }
             }
         }
@@ -81,7 +89,7 @@ export default function Marketplace() {
                         }
                     }).map((val, index) => {
                         return (
-                        <div key={index} class="card my-3" onClick={() => gotoCurrentPost(val.postNum)}>
+                        <div key={val.postNum} class="card my-3" onClick={() => gotoCurrentPost(val.postNum)}>
                             <div class="row">
                                 <div class="col-md-4 mx-3 my-4">
                                     {val.imgs[0] !== undefined && 
