@@ -2,6 +2,7 @@ import React from "react";
 
 export const PostData = [
     {
+        postNum: "0",
         title: "2X8X12 Premium Knotty Cedar",
         price: "$300",
         category: "Wood and Carpentry",
@@ -15,6 +16,7 @@ export const PostData = [
         imgs: [{ data_url: "Images/posts/img_1.png" }],
     },
     {
+        postNum: "1",
         title: "Wood and Metal Doors",
         price: "Contact for More Information",
         category: "Doors",
@@ -28,6 +30,7 @@ export const PostData = [
         imgs: [{ data_url: "Images/posts/img_2.png" }],
     },
     {
+        postNum: "2",
         title: "Brick 35X35",
         price: "Free",
         category: "Bricks and Stones",

@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import ImageUploading from "react-images-uploading";
 
 import "./Create.css"
@@ -10,7 +10,7 @@ export default function Create() {
     const forceUpdate = useCallback(() => updateState({}), []);
 
     const [images, setImages] = useState([]);
-    const [post, setPost] = useState({ title: "", price: "", category: "", description: "", address: "", postalcode: "", email: "", phone: "", youtubelink: "", scanlink: "", imgs: "" });
+    const [post, setPost] = useState({ postNum: "", title: "", price: "", category: "", description: "", address: "", postalcode: "", email: "", phone: "", youtubelink: "", scanlink: "", imgs: "" });
 
     const maxNumber = 6;
     const onChange = (imageList, addUpdateIndex) => {
@@ -19,11 +19,30 @@ export default function Create() {
     };
 
     function postListing() {
-        let postNum = localStorage.length;
-        localStorage.setItem(postNum, JSON.stringify(post));
-        window.location.href = "/loopico-prototype-website/#/marketplace";
-        forceUpdate();
+        for (let i = 0; i < localStorage.length; i++) {
+            let info = localStorage.getItem(i)
+
+            if (info === null) {
+                setPost(prevState => ({ ...prevState, postNum: i }));
+                window.location.href = "/loopico-prototype-website/#/marketplace";
+                break;
+            }
+            else if ((info != null) && (i === localStorage.length - 1)) {
+                setPost(prevState => { return { ...prevState, postNum: i + 1 }; });
+                window.location.href = "/loopico-prototype-website/#/marketplace";
+                break;
+            }
+
+            forceUpdate();
+        }
     }
+
+    useEffect(() => {
+        localStorage.setItem(post.postNum, JSON.stringify(post));
+        for (let i = 0; i < localStorage.length; i++) {
+            localStorage.removeItem("");
+        }
+    }, [post]);
 
     return (
         <div id="createPost" class="container-fluid">
@@ -106,7 +125,7 @@ export default function Create() {
                                 <h6 for="scanLink" class="form-label pt-2">3D Scanned Link</h6>
                                 <input type="text" class="form-control" id="scanLink" value={post.scanlink} onChange={e => { setPost(prevState => { return { ...prevState, scanlink: e.target.value }; }); }} />
                             </div>
-                            <button type="button" class="btn" onClick={() => postListing()}>Post</button>
+                            <button type="button" class="btn" onClick={postListing}>Post</button>
                         </div>
                     </div>
                 </div>

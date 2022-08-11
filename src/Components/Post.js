@@ -27,6 +27,16 @@ export default function Post() {
         }
     }
 
+    function deletePost() {
+        let index = sessionStorage.getItem("currentPost");
+        
+        if (index) {
+            localStorage.removeItem(index);
+
+            window.location.href = "/loopico-prototype-website/#/marketplace"
+        }
+    }
+
     return (
         <div id="post" class="container-fluid">
             <div class="row">
@@ -75,6 +85,7 @@ export default function Post() {
                                     <br />
                                     <h5 class="card-text"><strong>Description:</strong></h5>
                                     <h6 class="card-text">{post.description}</h6>
+                                    <button type="button" class="mt-5 btn" onClick={() => deletePost()}>Delete Post</button>
                                 </div>
                             </div>
                         </div>
